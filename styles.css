@@ -71,6 +71,9 @@ body{
         align-items: center;
         text-align: center;
     }
+    aside{
+        display: none;
+    }
 
 @media only screen and (min-width: 376px) and (max-width: 1440px) {
 
@@ -104,6 +107,28 @@ body{
         justify-content: center;
         gap: 30px;
     }
+    .responsive{
+        display: flex;
+        justify-content: space-between;
+    }
+    aside{
+        display: flex;
+    }
+    aside.contacts{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    aside section>ul{
+        display: flex;
+        flex-direction: column;
+    }
+    aside section>ul>li{
+        display: flex;
+        align-items: center;
 
-
+    }
+    .lol{
+        background-color: rebeccapurple;
+    }
 }
