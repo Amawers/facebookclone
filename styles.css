@@ -11,7 +11,7 @@ body{
         flex-direction: row;
         align-items: center;
     }
-    section{
+    section.hlogo-right{
         flex-grow: 1;
     }
     section.logo{
@@ -76,7 +76,12 @@ body{
     }
 
 @media only screen and (min-width: 376px) and (max-width: 1440px) {
+    section.hlogo-right{
+        flex-grow: 0.1;
 
+    }
+    section.logo{
+    }
     ul{
         justify-content: center;
     }
@@ -130,5 +135,10 @@ body{
     }
     .lol{
         background-color: rebeccapurple;
+    }
+    ul.nav-side{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
