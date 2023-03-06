@@ -7,157 +7,110 @@ body{
     font-weight: bold;
 }
 
-    /*header*/
-    header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+/*header*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-    }
-    section.hlogo-right{
-        flex-grow: 1;
-    }
-    section.logo{
-        font-family: 'Tilt Warp';
-        font-size: 18px;
-        flex-grow: 8;
-    }
-    img{
-        width: 20px;
-        height: 20px;
-        border: 2px solid white;
-        border-radius: 50%;
-    }
-    /*navigation bar*/
-    ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 0;
-    }
-    /*whats on your mind?*/
-    section.posting{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    section.story-pictures{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    section img.story{
-        width: 80px;
-        height: 100px;
-        border-radius: 15px;
-    }
-    /*main post*/
-    article{
-        display: flex;
-        flex-direction: column;
-    }
-    p.poster{
-        font-family: Arial, Helvetica, sans-serif;
-        flex-grow: 3;
-    }
-    article section.post-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    article section.post-footer{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-    }
-    aside{
-        display: none;
-    }
+}
+section.hlogo-right{
+    flex-grow: 1;
+}
+section.logo{
+    font-family: 'Tilt Warp';
+    font-size: 18px;
+    flex-grow: 8;
+}
+img{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+/*navigation bar*/
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+/*whats on your mind?*/
+section.posting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section.story-pictures{
+    display: flex;
+    justify-content: space-evenly;
+}
+section img.story{
+    width: 80px;
+    height: 100px;
+    border-radius: 15px;
+}
+/*main post*/
+article{
+    display: flex;
+    flex-direction: column;
+}
+p.poster{
+    font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 3;
+}
+article section.post-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+article section.post-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+aside{
+    display: none;
+}
 
 @media only screen and (min-width: 768px){
-    section.hlogo-right{
-        flex-grow: 0.1;
-    }
-    ul{
-        justify-content: center;
-    }
-    nav ul>i{
-        padding-left: 30px;        
-        padding-right: 30px;
-    }
-    section.story-pictures{
-        width: 100%;
-        justify-content: center;
-        gap: 15px;
-    }
-    article{
-        justify-content: center;
-    }
-    article section.post-header{
-        gap: 50px;
-    }
-    p.poster{
-        justify-content: center;
-        flex-grow: 0;
-    }
-    p.post-content{
-        display: flex;
-        justify-content: center;
-    }
-    article section.post-footer{
-        justify-content: center;
-        gap: 30px;
-    }
-    .responsive{
-        display: flex;
-        justify-content: space-between;
-    }
-    aside{
-        display: flex;
-    }
-    aside.contacts{
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        width: 100%;
-        align-items: center;
-    }
-    aside.sidebar{
-        width: 100%;
-    }
-
-    section.list-header{
-        display: flex;
-    }
-    span.contacts{
-        margin-left: 50px;
-        margin-right: 90px;
-    }
-    aside section>ul{
-        display: flex;
-        flex-direction: column;
-    }
-    aside section>ul>li{
-        display: flex;
-        align-items: center;
-
-    }
-    .lol{
-        background-color: rebeccapurple;
-    }
-    ul.nav-side{
-        display: flex;
-        flex-direction: column;
-    }
+    /*header*/
     header{
         background-color: #242526;
         padding: 10px;
         margin: 0px;
         min-width: 950px;
+    }
+    section.hlogo-right{
+        flex-grow: 0.1;
+    }
+    /*nav mobile*/
+    ul{
+        display: none;
+    }
+
+    /*BELOW FOR DESKTOP*/
+
+    .responsive{
+        display: flex;
+        justify-content: space-between;
+    }
+    /*all aside*/
+    aside{
+        display: flex;
+    }
+    /*left-side section*/
+    aside.sidebar{
+        width: 100%;
+    }
+    ul.nav-side{
+        display: flex;
+        flex-direction: column;
     }
     div.side-first{
         display: flex;
@@ -167,6 +120,7 @@ body{
         color: #2d86ff;
     }
 
+    /*main section*/
     main{
         display: flex;
         flex-direction: column;
@@ -187,17 +141,40 @@ body{
         padding: 12px;
         border-radius: 5px;
     }
+    section.story-pictures{
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+    article{
+        justify-content: center;
+    }
     article.main-article{
         background-color: #242526;
         margin: 30px;
         border-radius: 5px;
         width: 530px;
     }
+    article section.post-header{
+        gap: 50px;
+    }
     p.poster{
-        flex-grow: 1;
+        justify-content: center;
+        flex-grow: 0;
+    }
+    p.post-content{
+        display: flex;
+        justify-content: center;
+    }
+    article section.post-footer{
+        justify-content: center;
+        gap: 30px;
     }
     img.feed-picture{
         margin-left: 15px;
+    }
+    p.poster{
+        flex-grow: 1;
     }
     span.close{
         margin-right: 10px;
@@ -205,11 +182,28 @@ body{
     p.post-content{
         margin: 10px;
     }
-    section.post-footer{
-        justify-content: space-between;
-    }
-    ul{
-        display: none;
-    }
 
+    /*right-side section*/
+    aside.contacts{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        align-items: center;
+    }
+    section.list-header{
+        display: flex;
+    }
+    span.contacts{
+        margin-left: 50px;
+        margin-right: 90px;
+    }
+    aside section>ul{
+        display: flex;
+        flex-direction: column;
+    }
+    aside section>ul>li{
+        display: flex;
+        align-items: center;
+    }
 }
