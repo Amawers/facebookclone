@@ -1,3 +1,4 @@
+/*intended for Mobile device size 375px*/
 body{
     display: flex;
     flex-direction: column;
@@ -26,12 +27,17 @@ body{
         font-family: 'Tilt Warp';
         font-size: 18px;
         flex-grow: 8;
+        font-weight: normal;
     }
     img{
         width: 20px;
         height: 20px;
         border: 2px solid white;
         border-radius: 50%;
+    }
+    p.post{
+        padding: 10px;
+        border-radius: 35px;
     }
     /*navigation bar*/
     ul{
@@ -57,6 +63,7 @@ body{
         height: 100px;
         border-radius: 15px;
     }
+    
     /*main post*/
     article{
         display: flex;
@@ -73,11 +80,38 @@ body{
         align-items: center;
         gap: 10px;
     }
+    article section.post-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    div.pic-log{
+        display: flex;
+        align-items:center;
+    }
+    hr.mobile{
+        display: flex;
+        border:none;
+        height:2px;
+        width:100%;
+        background-color: rgb(62,64,66);
+    }
     article section.post-footer{
         display: flex;
         justify-content: space-evenly;
+
+    }
+    section div.fdivision{
+        display: flex;
+        flex-direction: row;
         align-items: center;
         text-align: center;
+    }
+    p.post-options{
+        font-size: 14px;
+    }
+    span.interact{
+        font-size: 14px;
+        margin-right: 5px;
     }
     aside{
         display: none;
@@ -89,6 +123,7 @@ body{
         display: none;
     }
 
+/*intended for desktop device size 1240px*/
 @media only screen and (min-width: 768px){
     .responsive{
         height: 100%;
@@ -272,6 +307,8 @@ body{
     article{
         justify-content: center;
         order: 3;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: normal;
     }
     article.main-article{
         background-color: #242526;
@@ -281,30 +318,27 @@ body{
     }
     article section.post-header{
         gap: 50px;
-    }
-    p.poster{
-        justify-content: center;
-        flex-grow: 0;
+        display: flex;
+        justify-content: space-between;
     }
     p.post-content{
-        display: flex;
-        justify-content: center;
+        padding: 10px;
+    }
+    p.poster{
+        margin-left: 10px;
+    }
+    span.close{
+        margin-right: 10px;
     }
     article section.post-footer{
-        justify-content: center;
         gap: 30px;
     }
     img.feed-picture{
         margin-left: 15px;
     }
-    p.poster{
-        flex-grow: 1;
-    }
-    span.close{
-        margin-right: 10px;
-    }
-    p.post-content{
-        margin: 10px;
+    div.pic-log{
+        display: flex;
+        align-items:center ;
     }
 
     /*right-side section*/
@@ -315,7 +349,7 @@ body{
         width: 100%;
         align-items: center;
         margin-left: 100px;
-        margin-top: -70px;
+        margin-top: 20px;
     }
     section.list-header{
         display: flex;
