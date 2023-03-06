@@ -14,6 +14,10 @@
         <section class="logo">
             facebook
         </section>
+        <section class="mid-search">
+            <i class="material-icons searching">search</i>
+            <p class="searching-text">Search Facebook</p>
+        </section>
         <section class="hlogo-right">
             <i class="material-icons navbar search">search</i>
         </section>
@@ -36,45 +40,50 @@
                 <ul class="nav-side">
                     <div class="side-first">
                         <i class="material-icons navbar home side">home</i> 
-                        <p>Home</p>
+                        <p class="sidenav-text">Home</p>
                     </div>
                     <div class="side-first">
-                        <img class="profile" src="assets/pictures/profilepic.jpg" alt="profilepicture">
-                        <p>Christian Jericho A. Dacoroon</p>
+                        <img class="profile side-profile" src="assets/pictures/profilepic.jpg" alt="profilepicture">
+                        <p class="sidenav-text">Christian Jericho Dacoroon</p>
                     </div>
-                    <hr style="width:215px;background-color: #3e4042;">
+                    <hr style="border:none;height:2px;width:250px;background-color: rgb(62,64,66);">
                     <div class="side-first">
                         <i class="material-icons navbar video side">ondemand_video</i>
-                        <p>Watch</p>
+                        <p class="sidenav-text">Watch</p>
                     </div>
                     <div class="side-first">
                         <i class="material-icons navbar store side">storefront</i>
-                        <p>Marketplace</p>
+                        <p class="sidenav-text">Marketplace</p>
                     </div>
                     <div class="side-first">
                         <i class="material-icons navbar group side">supervised_user_circle</i>
-                        <p>Groups</p>
+                        <p class="sidenav-text">Groups</p>
                     </div>
+                    <div class="side-first">
+                        <i class="material-icons navbar more side">apps</i>
+                        <p class="sidenav-text">See all</p>
+                    </div>
+                    <hr style="border:none;height:2px;width:250px;background-color: rgb(62,64,66);">
                     <section class="list">
                         <ul>
-                            <li><img src="assets/pictures/contact1.jpg" alt="">
-                                <p>Tom Cruz</p>
+                            <li><img class="group-pics" src="assets/pictures/dacs.jpg" alt="">
+                                <p class="sidenav-text">Dac's Kitchen</p>
                             </li>
                             <li>
-                                <img src="assets/pictures/contact2.jpg" alt="">
-                                <p>Taylor Sweeps</p>
+                                <img class="group-pics" src="assets/pictures/ustp.jpg" alt="">
+                                <p class="sidenav-text">USTP Facebook Group</p>
                             </li>
                             <li>
-                                <img src="assets/pictures/contact3.jpg" alt="">
-                                <p>Ed Shernan</p>
+                                <img class="group-pics" src="assets/pictures/programmers.jpg" alt="">
+                                <p class="sidenav-text">Programmers Codepost</p>
                             </li>
                             <li>
-                                <img src="assets/pictures/contact4.jpg" alt="">
-                                <p>Kanye East</p>
+                                <img class="group-pics" src="assets/pictures/react.jpg" alt="">
+                                <p class="sidenav-text">ReactJS Philippines</p>
                             </li>
                             <li>
-                                <img src="assets/pictures/contact5.jpg" alt="">
-                                <p>Arnold Swarfdsgs</p>
+                                <img class="group-pics" src="assets/pictures/cod.jpg" alt="">
+                                <p class="sidenav-text"> CODM Philippines</p>
                             </li>
                         </ul>
                     </section>
@@ -87,29 +96,25 @@
                 <img class="profile update-profile" src="assets/pictures/profilepic.jpg" alt="profilepicture">
                 <p class="post">What's on your mind, Christian?</p>
             </section>
-            <section class="story-pictures">
-                <img class="story" src="assets/pictures/profilepic.jpg" alt="">
-                <img class="story" src="assets/pictures/rose.jpg" alt="">
-                <img class="story" src="assets/pictures/building.jpg" alt="">
-                <img class="story" src="assets/pictures/light.jpg" alt="">
+            <section class="story-section">
+                <div class="pictues-navbars">
+                    <div class="story-container">
+                        <i class="material-icons navbar more fb-story">import_contacts</i>
+                        <span class="story">Stories</span>
+                    </div>
+                    <div class="reels-container">
+                        <i class="material-icons navbar more fb-reels">movie</i>
+                        <span class="reels">Reels</span>
+                    </div>
+                </div>
+                <hr class="hori-story" style="border:none;height:2px;width:250px;background-color: rgb(46,137,255);margin-right: 400px;">
+                <div class="storypictures">
+                    <img class="story pic-carousel" src="assets/pictures/profilepic.jpg" alt="">
+                    <img class="story pic-carousel" src="assets/pictures/rose.jpg" alt="">
+                    <img class="story pic-carousel" src="assets/pictures/building.jpg" alt="">
+                    <img class="story pic-carousel" src="assets/pictures/light.jpg" alt="">
+                </div>
             </section>
-            <article class="main-article">
-                <section class="post-header">
-                    <img class="feed-picture" src="assets/pictures/ustp.jpg" alt="">
-                    <p class="poster">USTP Facebook Group</p>
-                    <span class="material-icons more">more_horiz</span>
-                    <span class="material-icons more close">close</span>
-                </section>
-                <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed sapien ipsum.</p>
-                <section class="post-footer">
-                    <span class="material-icons more">thumb_up</span>
-                    <p class="post-options like">Like</p>
-                    <span class="material-icons more comment-pic">mode_comment</span>
-                    <p class="post-options comment">Comment</p>
-                    <span class="material-icons more">near_me</span>
-                    <p class="post-options share">Share</p>
-                </section>
-            </article>
             <article class="main-article">
                 <section class="post-header">
                     <img class="feed-picture" src="assets/pictures/ustp.jpg" alt="">
@@ -131,51 +136,46 @@
         <aside class="contacts">
             <section class="list-header">   
                 <span class="contacts">Contacts</span>
-                <i class="material-icons navbar search">search</i>
-                <i class="material-icons more">more_horiz</i>
+                <i class="material-icons navbar contact-search">search</i>
+                <i class="material-icons contact-more">more_horiz</i>
             </section>
             <section class="list">
                 <ul>
                     <li><img src="assets/pictures/contact1.jpg" alt="">
-                        <p>Tom Cruz</p>
+                        <p class="contact-name">Tom Cruz</p>
                     </li>
                     <li>
                         <img src="assets/pictures/contact2.jpg" alt="">
-                        <p>Taylor Sweeps</p>
+                        <p class="contact-name">Taylor Sweeps</p>
                     </li>
                     <li>
                         <img src="assets/pictures/contact3.jpg" alt="">
-                        <p>Ed Shernan</p>
+                        <p class="contact-name">Ed Shernan</p>
                     </li>
                     <li>
                         <img src="assets/pictures/contact4.jpg" alt="">
-                        <p>Kanye East</p>
+                        <p class="contact-name">Kanye East</p>
                     </li>
                     <li>
                         <img src="assets/pictures/contact5.jpg" alt="">
-                        <p>Arnold Swarfdsgs</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="list-header">   
-                <span class="contacts">Groups</span>
-                <i class="material-icons navbar search">search</i>
-                <i class="material-icons more">more_horiz</i>
-            </section>
-            <section class="list">
-                <ul>
-                    <li><img src="assets/pictures/contact1.jpg" alt="">
-                        <p>Tom Cruz</p>
+                        <p class="contact-name">Arnold Swarzsgafa</p>
                     </li>
                     <li>
-                        <img src="assets/pictures/contact2.jpg" alt="">
-                        <p>Taylor Sweeps</p>
+                        <img src="assets/pictures/contact6.jpg" alt="">
+                        <p class="contact-name">Kid Kulafu</p>
                     </li>
                     <li>
-                        <img src="assets/pictures/contact3.jpg" alt="">
-                        <p>Ed Shernan</p>
+                        <img src="assets/pictures/contact7.jpg" alt="">
+                        <p class="contact-name">Alden Recharge</p>
                     </li>
-                    
+                    <li>
+                        <img src="assets/pictures/contact8.jpg" alt="">
+                        <p class="contact-name">Worstershers Shauce</p>
+                    </li>
+                    <li>
+                        <img src="assets/pictures/contact9.jpg" alt="">
+                        <p class="contact-name">Skusta Clean</p>
+                    </li>
                 </ul>
             </section>
         </aside>
