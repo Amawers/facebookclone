@@ -3,6 +3,8 @@ body{
     flex-direction: column;
     background-color: black;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
     /*header*/
@@ -10,6 +12,7 @@ body{
         display: flex;
         flex-direction: row;
         align-items: center;
+
     }
     section.hlogo-right{
         flex-grow: 1;
@@ -75,12 +78,9 @@ body{
         display: none;
     }
 
-@media only screen and (min-width: 376px) and (max-width: 1440px) {
+@media only screen and (min-width: 768px){
     section.hlogo-right{
         flex-grow: 0.1;
-
-    }
-    section.logo{
     }
     ul{
         justify-content: center;
@@ -123,6 +123,19 @@ body{
         display: flex;
         flex-direction: column;
         align-self: center;
+        width: 100%;
+        align-items: center;
+    }
+    aside.sidebar{
+        width: 100%;
+    }
+
+    section.list-header{
+        display: flex;
+    }
+    span.contacts{
+        margin-left: 50px;
+        margin-right: 90px;
     }
     aside section>ul{
         display: flex;
@@ -139,6 +152,64 @@ body{
     ul.nav-side{
         display: flex;
         flex-direction: column;
-        gap: 20px;
     }
+    header{
+        background-color: #242526;
+        padding: 10px;
+        margin: 0px;
+        min-width: 950px;
+    }
+    div.side-first{
+        display: flex;
+        align-items: center;
+    }
+    i.side {
+        color: #2d86ff;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.posting{
+        background-color: #242526;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 510px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    section.story-pictures{
+        background-color: #242526;
+        gap: 50px;
+        width: 500px;
+        padding: 12px;
+        border-radius: 5px;
+    }
+    article.main-article{
+        background-color: #242526;
+        margin: 30px;
+        border-radius: 5px;
+        width: 530px;
+    }
+    p.poster{
+        flex-grow: 1;
+    }
+    img.feed-picture{
+        margin-left: 15px;
+    }
+    span.close{
+        margin-right: 10px;
+    }
+    p.post-content{
+        margin: 10px;
+    }
+    section.post-footer{
+        justify-content: space-between;
+    }
+    ul{
+        display: none;
+    }
+
 }
