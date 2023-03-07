@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #242526;
+    padding: 10px;
+}
+section.one{
+    width: 100px;
+}
+section.two{
+    display: flex;
+    align-items: center;
+    background-color: rgb(58,59,60);
+    width: 500px;
+    border-radius: 25px;
+    height: 40px;
+
+}
+section.three{
+    width: 100px;
+
+}
